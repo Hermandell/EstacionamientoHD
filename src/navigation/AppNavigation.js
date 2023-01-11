@@ -1,16 +1,12 @@
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-
-
 import { RestaurantStack } from "./EstacionaminetoStack";
-
-
-import { FavoritesScreen } from "../screens/FavoritesScreen";
-import { RankingScreen } from "../screens/RankingScreen";
-import { SearchScreen } from "../screens/SearchScreen";
-import { AccountScreen } from "../screens/AccountScreen";
 import { Icon } from "@rneui/base";
 import { screen } from "../utils";
+import { FavoritesStack } from "./FavoritesStack";
+import { RankingStack } from "./RankingStack";
+import { SearchStack } from "./SearchStack";
+import { AccountStack } from "./AccountStack";
 
 const Tab = createBottomTabNavigator();
 
@@ -29,26 +25,25 @@ export const AppNavigation = () => {
                 component={RestaurantStack}
                 options={{ title: "Estacionamiento" }}
             />
-           
 
             <Tab.Screen
                 name={screen.favoritos.tab}
-                component={FavoritesScreen}
+                component={FavoritesStack}
                 options={{ title: "Favoritos" }}
             />
             <Tab.Screen
                 name={screen.ranking.tab}
-                component={RankingScreen}
+                component={RankingStack}
                 options={{ title: "Ranking" }}
             />
             <Tab.Screen
                 name={screen.buscar.tab}
-                component={SearchScreen}
+                component={SearchStack}
                 options={{ title: "Buscar" }}
             />
             <Tab.Screen
                 name={screen.cuenta.tab}
-                component={AccountScreen}
+                component={AccountStack}
                 options={{ title: "Cuenta" }}
             />
         </Tab.Navigator>

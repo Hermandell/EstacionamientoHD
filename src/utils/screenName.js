@@ -5,15 +5,19 @@ const EstacionamientoStack = {
 };
 const FavoritosStack = {
   tab: "FavoritosTab",
+  favoritos: "Favoritos"
 };
 const RankingStack = {
   tab: "RankingTab",
+  ranking:"LosMejores"
 };
 const BuscarStack = {
   tab: "BuscarTab",
+  buscar:"Buscar"
 };
 const CuentaStack = {
   tab: "CuentaTab",
+  cuenta:"Cuenta"
 };
 
 export const screen = {
