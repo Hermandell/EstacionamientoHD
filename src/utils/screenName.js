@@ -17,7 +17,8 @@ const BuscarStack = {
 };
 const CuentaStack = {
   tab: "CuentaTab",
-  cuenta:"Cuenta"
+  cuenta:"Cuenta",
+  login:"Login",
 };
 
 export const screen = {
